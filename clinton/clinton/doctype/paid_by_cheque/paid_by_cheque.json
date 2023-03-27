@@ -125,14 +125,17 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-03-27 15:21:32.015074",
+ "modified": "2023-03-27 18:41:47.423055",
  "modified_by": "Administrator",
  "module": "Clinton",
  "name": "Paid by Cheque",
+ "name_case": "Title Case",
  "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {
+   "amend": 1,
+   "cancel": 1,
    "create": 1,
    "delete": 1,
    "email": 1,
