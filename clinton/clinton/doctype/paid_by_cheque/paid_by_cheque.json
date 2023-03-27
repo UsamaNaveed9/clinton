@@ -1,0 +1,169 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-03-27 14:57:49.784474",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "type_of_payment_section",
+  "naming_series",
+  "cheque_bank",
+  "chequereference_no",
+  "column_break_5",
+  "payment_type",
+  "chequereference_date",
+  "cheque_amount",
+  "section_break_9",
+  "image",
+  "reference_invoice_section",
+  "reference_sales_invoice",
+  "section_break_13",
+  "remark",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "type_of_payment_section",
+   "fieldtype": "Section Break",
+   "label": "Type of Payment"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Naming",
+   "options": "Cheque-Paid-.YYYY.-",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cheque_bank",
+   "fieldtype": "Data",
+   "label": "Cheque Bank"
+  },
+  {
+   "fieldname": "chequereference_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Cheque/Reference No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "payment_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Payment Type",
+   "options": "Cheque",
+   "reqd": 1
+  },
+  {
+   "fieldname": "chequereference_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Cheque/Reference Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cheque_amount",
+   "fieldtype": "Currency",
+   "label": "Cheque Amount",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image Attach"
+  },
+  {
+   "fieldname": "reference_invoice_section",
+   "fieldtype": "Section Break",
+   "label": "Reference Invoice"
+  },
+  {
+   "fieldname": "reference_sales_invoice",
+   "fieldtype": "Table",
+   "label": "Reference Sales Invoice",
+   "options": "Sales Invoice Ref for cheque"
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Text",
+   "label": "Remark"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Paid by Cheque",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-03-27 15:02:04.140679",
+ "modified_by": "Administrator",
+ "module": "Clinton",
+ "name": "Paid by Cheque",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts User",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "permlevel": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}

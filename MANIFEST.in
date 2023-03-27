@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include clinton *.css
+recursive-include clinton *.csv
+recursive-include clinton *.html
+recursive-include clinton *.ico
+recursive-include clinton *.js
+recursive-include clinton *.json
+recursive-include clinton *.md
+recursive-include clinton *.png
+recursive-include clinton *.py
+recursive-include clinton *.svg
+recursive-include clinton *.txt
+recursive-exclude clinton *.pyc
