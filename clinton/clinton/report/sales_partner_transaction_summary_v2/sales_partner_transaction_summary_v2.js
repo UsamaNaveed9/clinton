@@ -18,6 +18,13 @@ frappe.query_reports["Sales Partner Transaction Summary V2"] = {
 			default: "Sales Invoice"
 		},
 		{
+			fieldname: "status",
+			label: __("Status"),
+			fieldtype: "Select",
+			options: "Paid\nUnpaid\nPartly Paid\nOverdue",
+			default: "Paid"
+		},
+		{
 			fieldname: "from_date",
 			label: __("From Date"),
 			fieldtype: "Date",

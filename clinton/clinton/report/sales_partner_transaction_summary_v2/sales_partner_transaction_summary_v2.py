@@ -139,6 +139,9 @@ def get_conditions(filters, date_field):
 	if filters.get("to_date"):
 		conditions += " and dt.{0} <= %(to_date)s".format(date_field)
 
+	if filters.get("status"):
+		conditions += " and dt.status = %(status)s"	
+
 	if not filters.get("show_return_entries"):
 		conditions += " and dt_item.qty > 0.0"
 
